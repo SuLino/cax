@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="yang.css">
+    <script type="text/javascript" src="JS.js">
+    </script>
+</head>
+<body>
+<form action="http://localhost:8080" method="get" >
+    <h1>用户信息表单</h1>
+    <table>
+        <tr>
+            <td> 用户名</td>
+            <td><label>
+                <input type="text" name="username" value="dsa"/>
+            </label></td>
+        </tr>
+
+        <tr>
+            <td>密码</td>
+            <td><label>
+                <input type="password" name="password" value="123" id="2123">
+                <span id="span"></span>
+            </label></td>
+        </tr>
+        <tr>
+            <td>
+                性别
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="sex" value="男" checked="checked">
+                </label>男<label>
+                <input type="radio" name="sex" value="女">
+            </label>女
+            </td>
+        </tr>
+        <tr>
+            <td>
+                兴趣
+            </td>
+            <td>
+                <label>
+                    <input name="hobby" type="checkbox"  value="football">足球
+                <input name="hobby" type="checkbox"  value="basketball">篮球
+                <input name="hobby" type="checkbox"  value="paiqiu">排球
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>时间</td>
+            <td><label>
+                <input name="time" type="date" value="2020-12-03">
+            </label></td>
+        </tr>
+        <tr>
+            <td>国籍</td>
+            <td><label>
+                <select name="country">
+                    <option>--请选择国籍--</option>
+                    <option value="China">中国</option>
+                    <option value="French">法国</option>
+                    <option value="America">美国</option>
+                </select>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <td> 自我介绍</td>
+            <td> <label>
+    <textarea rows="10" cols="30" name="desc">默认输入值。。。
+    </textarea>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset"/>
+            </td>
+            <td align="center">
+                <input type="submit"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <button type="button" id="123">校验</button>
+            </td>
+            <td>
+            <button type="button" onclick="mm()">全选</button>
+            <button type="button" onclick="ss()">全不选</button>
+            <button type="button" onclick="nn()">反选</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
